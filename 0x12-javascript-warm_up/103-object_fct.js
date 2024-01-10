@@ -1,5 +1,16 @@
 #!/usr/bin/node
-const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
-addMeMaybe(4, function (nb) {
-  console.log('New value: ' + nb);
-});
+const myObject = {
+	  type: 'object',
+	  value: 12
+};
+console.log(myObject);
+// Function to increment the value property of myObject
+myObject.incr = function() {
+  this.value += 1;
+};
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
