@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const myObject = {
-	  type: 'object',
-	  value: 12
+  type: 'object',
+  value: 12
 };
 console.log(myObject);
 // Function to increment the value property of myObject
-myObject.incr = function() {
+myObject.incr = function () {
   this.value += 1;
 };
 myObject.incr();
